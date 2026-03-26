@@ -7,61 +7,22 @@ interface Milestone {
   year: string;
   text: string;
   detail: string;
-  image: string;
 }
 
-const milestones: Milestone[] = [
-  {
-    year: "1994",
-    text: "Заснування Інституту підготовки кадрів СБУ",
-    detail:
-      "Створення спеціалізованого навчального закладу для підготовки висококваліфікованих кадрів Служби безпеки незалежної України. Початок формування власної школи безпекової освіти.",
-    image:
-      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop&q=80",
-  },
-  {
-    year: "2001",
-    text: "Реорганізація в Національну академію СБУ",
-    detail:
-      "Інститут отримав статус Національної академії — визнання найвищого рівня підготовки фахівців у сфері національної безпеки. Розширення спектру спеціальностей.",
-    image:
-      "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&h=400&fit=crop&q=80",
-  },
-  {
-    year: "2010",
-    text: "Акредитація за IV рівнем",
-    detail:
-      "Академія підтвердила найвищий рівень акредитації, що дає право готувати магістрів, докторів філософії та докторів наук. Запровадження нових освітніх стандартів.",
-    image:
-      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&q=80",
-  },
-  {
-    year: "2015",
-    text: "Нові спеціальності з кібербезпеки",
-    detail:
-      "У відповідь на сучасні виклики запроваджено підготовку фахівців з кібербезпеки та інформаційного захисту. Створено спеціалізовані лабораторії та кіберполігон.",
-    image:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop&q=80",
-  },
-  {
-    year: "2022",
-    text: "Модернізація за стандартами НАТО",
-    detail:
-      "Повна модернізація навчальних програм відповідно до стандартів Північноатлантичного альянсу. Інтеграція найкращих практик підготовки кадрів безпекового сектору.",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop&q=80",
-  },
-  {
-    year: "2025",
-    text: "Науково-дослідний центр кіберзахисту",
-    detail:
-      "Відкриття сучасного науково-дослідного центру, оснащеного передовим обладнанням для досліджень у сфері кіберзахисту та штучного інтелекту.",
-    image:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop&q=80",
-  },
+const images = [
+  "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&h=400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop&q=80",
+  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop&q=80",
 ];
 
-export default function HistoryBookshelf() {
+export default function HistoryBookshelf({
+  milestones,
+}: {
+  milestones: Milestone[];
+}) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -95,6 +56,7 @@ export default function HistoryBookshelf() {
       <div className="flex gap-2 md:gap-3 justify-center min-w-max mx-auto">
         {milestones.map((item, index) => {
           const isActive = activeIndex === index;
+          const image = images[index] || images[0];
 
           return (
             <motion.div
@@ -119,7 +81,7 @@ export default function HistoryBookshelf() {
               >
                 {/* BG image */}
                 <img
-                  src={item.image}
+                  src={image}
                   alt={item.text}
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
@@ -136,7 +98,7 @@ export default function HistoryBookshelf() {
                   transition={{ duration: 0.3 }}
                 />
 
-                {/* ── Collapsed ── */}
+                {/* Collapsed */}
                 <AnimatePresence>
                   {!isActive && (
                     <motion.div
@@ -161,7 +123,7 @@ export default function HistoryBookshelf() {
                   )}
                 </AnimatePresence>
 
-                {/* ── Expanded ── */}
+                {/* Expanded */}
                 <AnimatePresence>
                   {isActive && (
                     <motion.div
@@ -179,7 +141,7 @@ export default function HistoryBookshelf() {
                         transition={{ delay: 0.1, duration: 0.5 }}
                       >
                         <img
-                          src={item.image}
+                          src={image}
                           alt={item.text}
                           className="w-full h-full object-cover"
                         />

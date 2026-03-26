@@ -1,8 +1,21 @@
 import Link from "next/link";
 import { NewsItem } from "@/data/news";
+import type { Locale } from "@/i18n/locales";
 
-export default function NewsCard({ item }: { item: NewsItem }) {
-  const dateFormatted = new Date(item.date).toLocaleDateString("uk-UA", {
+export default function NewsCard({
+  item,
+  locale,
+  readMore,
+}: {
+  item: NewsItem;
+  locale: Locale;
+  readMore: string;
+}) {
+  const title = locale === "en" ? item.title_en : item.title_uk;
+  const excerpt = locale === "en" ? item.excerpt_en : item.excerpt_uk;
+  const dateLocale = locale === "en" ? "en-GB" : "uk-UA";
+
+  const dateFormatted = new Date(item.date).toLocaleDateString(dateLocale, {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -14,7 +27,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
       <div className="aspect-[16/10] relative overflow-hidden bg-primary-100">
         <img
           src={item.image}
-          alt={item.title}
+          alt={title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />
@@ -26,16 +39,16 @@ export default function NewsCard({ item }: { item: NewsItem }) {
 
       <div className="p-5">
         <h3 className="font-bold text-primary-900 mb-2 line-clamp-2 group-hover:text-primary-600 transition-colors">
-          {item.title}
+          {title}
         </h3>
         <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-          {item.excerpt}
+          {excerpt}
         </p>
         <Link
-          href={`/news/${item.slug}`}
+          href={`/${locale}/news/${item.slug}`}
           className="text-sm font-medium text-accent-600 hover:text-accent-500 transition-colors"
         >
-          Читати далі →
+          {readMore} &rarr;
         </Link>
       </div>
     </article>

@@ -3,19 +3,27 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { heroSlides } from "@/data/site";
+import type { Dictionary } from "@/i18n/getDictionary";
+import type { Locale } from "@/i18n/locales";
 
-export default function Hero() {
+export default function Hero({
+  locale,
+  dict,
+}: {
+  locale: Locale;
+  dict: Dictionary;
+}) {
+  const slides = dict.hero.slides;
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
-  const slide = heroSlides[currentSlide];
+  const slide = slides[currentSlide];
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -51,16 +59,16 @@ export default function Hero() {
             {slide.subtitle}
           </p>
           <Link
-            href={slide.cta.href}
+            href={`/${locale}${slide.ctaHref}`}
             className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-primary-950 font-semibold px-8 py-4 rounded-lg text-lg transition-all hover:scale-105 shadow-lg shadow-accent-500/25"
           >
-            {slide.cta.text}
+            {slide.ctaText}
           </Link>
         </div>
 
         {/* Slide indicators */}
         <div className="flex items-center justify-center gap-2 mt-12">
-          {heroSlides.map((_, i) => (
+          {slides.map((_: unknown, i: number) => (
             <button
               key={i}
               onClick={() => setCurrentSlide(i)}
@@ -69,7 +77,7 @@ export default function Hero() {
                   ? "w-8 bg-accent-400"
                   : "w-4 bg-white/30 hover:bg-white/50"
               }`}
-              aria-label={`Слайд ${i + 1}`}
+              aria-label={`${dict.hero.slideLabel} ${i + 1}`}
             />
           ))}
         </div>

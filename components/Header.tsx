@@ -1,37 +1,64 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { mainNav } from "@/data/navigation";
+import type { Dictionary } from "@/i18n/getDictionary";
+import type { Locale } from "@/i18n/locales";
 
-export default function Header() {
+interface NavItem {
+  title: string;
+  href: string;
+}
+
+export default function Header({
+  locale,
+  dict,
+}: {
+  locale: Locale;
+  dict: Dictionary;
+}) {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const navItems: NavItem[] = [
+    { title: dict.nav.home, href: `/${locale}` },
+    { title: dict.nav.about, href: `/${locale}/about` },
+    { title: dict.nav.admissions, href: `/${locale}/admissions` },
+    { title: dict.nav.education, href: `/${locale}/education` },
+    { title: dict.nav.science, href: `/${locale}/science` },
+    { title: dict.nav.news, href: `/${locale}/news` },
+    { title: dict.nav.contacts, href: `/${locale}/contacts` },
+  ];
+
+  const otherLocale = locale === "uk" ? "en" : "uk";
+  const switchPath = pathname.replace(`/${locale}`, `/${otherLocale}`);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary-900/95 backdrop-blur-md border-b border-primary-700/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
+          <Link href={`/${locale}`} className="flex items-center gap-3 shrink-0">
             <img
               src="/images/logo.png"
-              alt="Логотип"
+              alt="Logo"
               className="w-14 h-14 md:w-16 md:h-16 object-contain"
             />
             <div className="hidden sm:block">
               <div className="text-white font-bold text-base md:text-lg leading-tight">
-                Національна академія
+                {dict.site.headerLine1}
               </div>
               <div className="text-white font-bold text-base md:text-lg leading-tight">
-                Служби безпеки України
+                {dict.site.headerLine2}
               </div>
             </div>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">
-            {mainNav.map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -40,16 +67,43 @@ export default function Header() {
                 {item.title}
               </Link>
             ))}
+            {/* Language switcher */}
+            <Link
+              href={switchPath}
+              className="ml-3 px-3 py-1.5 text-sm font-medium rounded-lg border border-primary-600 transition-colors hover:bg-primary-700/50"
+            >
+              <span className={locale === "uk" ? "text-accent-400 font-bold" : "text-primary-300"}>
+                UA
+              </span>
+              <span className="text-primary-500 mx-1">|</span>
+              <span className={locale === "en" ? "text-accent-400 font-bold" : "text-primary-300"}>
+                EN
+              </span>
+            </Link>
           </nav>
 
-          {/* Mobile toggle */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white p-2"
-            aria-label="Меню"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile: lang switcher + toggle */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <Link
+              href={switchPath}
+              className="px-2 py-1 text-xs font-medium rounded border border-primary-600 transition-colors hover:bg-primary-700/50"
+            >
+              <span className={locale === "uk" ? "text-accent-400 font-bold" : "text-primary-300"}>
+                UA
+              </span>
+              <span className="text-primary-500 mx-0.5">|</span>
+              <span className={locale === "en" ? "text-accent-400 font-bold" : "text-primary-300"}>
+                EN
+              </span>
+            </Link>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white p-2"
+              aria-label={dict.common.menu}
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -57,7 +111,7 @@ export default function Header() {
       {isOpen && (
         <div className="lg:hidden bg-primary-900/98 backdrop-blur-md border-t border-primary-700/50">
           <nav className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
-            {mainNav.map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
