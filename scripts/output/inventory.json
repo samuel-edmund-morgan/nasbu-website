@@ -1,0 +1,129 @@
+{
+  "news": {
+    "row_count": 867,
+    "columns_extracted": [
+      "id",
+      "ua_title",
+      "en_title",
+      "date_publish",
+      "category",
+      "ua_text",
+      "en_text",
+      "ua_description",
+      "en_description",
+      "hide",
+      "view",
+      "important",
+      "highlight"
+    ],
+    "output_file": "news.json",
+    "output_size_bytes": 3019674
+  },
+  "pages": {
+    "row_count": 233,
+    "columns_extracted": [
+      "id",
+      "ua_title",
+      "en_title",
+      "ua_seotitle",
+      "en_seotitle",
+      "ua_description",
+      "en_description",
+      "ua_text",
+      "en_text",
+      "page",
+      "rel",
+      "menu",
+      "type",
+      "copy",
+      "priority",
+      "hide",
+      "url",
+      "sub_page",
+      "fullwidth",
+      "news_category"
+    ],
+    "output_file": "pages.json",
+    "output_size_bytes": 1666084
+  },
+  "galleries": {
+    "row_count": 54,
+    "columns_extracted": [
+      "id",
+      "ua_title",
+      "en_title",
+      "date_publish",
+      "category",
+      "ua_text",
+      "en_text",
+      "ua_description",
+      "en_description",
+      "hide"
+    ],
+    "output_file": "galleries.json",
+    "output_size_bytes": 20630
+  },
+  "videos": {
+    "row_count": 50,
+    "columns_extracted": [
+      "id",
+      "ua_title",
+      "en_title",
+      "date_publish",
+      "ua_description",
+      "en_description",
+      "category",
+      "src",
+      "ua_text",
+      "en_text",
+      "hide"
+    ],
+    "output_file": "videos.json",
+    "output_size_bytes": 21114
+  },
+  "files": {
+    "row_count": 7006,
+    "columns_extracted": [
+      "id",
+      "module",
+      "module_id",
+      "title",
+      "link",
+      "filetype",
+      "size",
+      "img",
+      "priority",
+      "highlight",
+      "slider_highlight",
+      "index_highlight",
+      "hide"
+    ],
+    "output_file": "files.json",
+    "output_size_bytes": 2108636
+  },
+  "news_categories": {
+    "row_count": 980,
+    "columns_extracted": [
+      "id",
+      "page_id",
+      "news_id"
+    ],
+    "output_file": "news_categories.json",
+    "output_size_bytes": 59755
+  },
+  "galleries_categories": {
+    "row_count": 56,
+    "columns_extracted": [
+      "id",
+      "page_id",
+      "gallery_id"
+    ],
+    "output_file": "galleries_categories.json",
+    "output_size_bytes": 3512
+  },
+  "_meta": {
+    "source_file": "/Users/samuel/Development/Projects/academy-website/additionalContextFiles/db-nasbu.sql",
+    "extraction_time_seconds": 1.3,
+    "tables_extracted": 7
+  }
+}
