@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Section from "@/components/Section";
 import NewsCard from "@/components/NewsCard";
-import { news } from "@/data/news";
+import { getVisibleNews } from "@/lib/news";
 import { getDictionary } from "@/i18n/getDictionary";
 import { locales, type Locale } from "@/i18n/locales";
 
@@ -25,6 +25,7 @@ export default async function NewsPage({
 }) {
   const locale = params.locale as Locale;
   const dict = await getDictionary(locale);
+  const allNews = getVisibleNews();
 
   return (
     <div className="pt-20">
@@ -41,7 +42,7 @@ export default async function NewsPage({
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {news.map((item) => (
+          {allNews.map((item) => (
             <NewsCard key={item.slug} item={item} locale={locale} readMore={dict.news.readMore} />
           ))}
         </div>

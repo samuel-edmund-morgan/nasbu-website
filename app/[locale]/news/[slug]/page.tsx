@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Section from "@/components/Section";
-import { news } from "@/data/news";
+import { getAllNews, getNewsBySlug } from "@/lib/news";
 import { ArrowLeft } from "lucide-react";
 import { getDictionary } from "@/i18n/getDictionary";
 import { locales, type Locale } from "@/i18n/locales";
@@ -12,6 +12,7 @@ interface Props {
 }
 
 export function generateStaticParams() {
+  const news = getAllNews().filter((n) => !n.hide);
   return news.flatMap((item) =>
     locales.map((locale) => ({ locale, slug: item.slug }))
   );
@@ -20,20 +21,20 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = params.locale as Locale;
   const dict = await getDictionary(locale);
-  const item = news.find((n) => n.slug === params.slug);
+  const item = getNewsBySlug(params.slug);
   if (!item) return { title: dict.news.singleTitle };
-  const title = locale === "en" ? item.title_en : item.title_uk;
+  const title = locale === "en" && item.title_en ? item.title_en : item.title_uk;
   return { title };
 }
 
 export default async function NewsArticle({ params }: Props) {
   const locale = params.locale as Locale;
   const dict = await getDictionary(locale);
-  const item = news.find((n) => n.slug === params.slug);
+  const item = getNewsBySlug(params.slug);
   if (!item) return notFound();
 
-  const title = locale === "en" ? item.title_en : item.title_uk;
-  const content = locale === "en" ? item.content_en : item.content_uk;
+  const title = locale === "en" && item.title_en ? item.title_en : item.title_uk;
+  const content = locale === "en" && item.content_en ? item.content_en : item.content_uk;
   const dateLocale = locale === "en" ? "en-GB" : "uk-UA";
 
   const dateFormatted = new Date(item.date).toLocaleDateString(dateLocale, {
@@ -42,16 +43,22 @@ export default async function NewsArticle({ params }: Props) {
     year: "numeric",
   });
 
+  const imageUrl = item.image ? `/uploads/${item.image}` : null;
+
   return (
     <div className="pt-20">
       {/* Hero with image */}
       <div className="relative">
         <div className="absolute inset-0">
-          <img
-            src={item.image}
-            alt={title}
-            className="w-full h-full object-cover"
-          />
+          {imageUrl ? (
+            <img
+              src={imageUrl}
+              alt={title}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-primary-700 to-primary-900" />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-primary-950 via-primary-900/85 to-primary-800/70" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -78,7 +85,7 @@ export default async function NewsArticle({ params }: Props) {
                 <ul key={i} className="list-disc pl-6 space-y-2 my-4">
                   {items.map((li, j) => (
                     <li key={j} className="text-gray-700">
-                      {li.replace("- ", "")}
+                      {li.replace(/^-\s*/, "")}
                     </li>
                   ))}
                 </ul>

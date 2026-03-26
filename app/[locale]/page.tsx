@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Section, { SectionTitle } from "@/components/Section";
 import NewsCard from "@/components/NewsCard";
-import { news } from "@/data/news";
+import { getLatestNews } from "@/lib/news";
 import Link from "next/link";
 import {
   Shield,
@@ -25,7 +25,7 @@ export default async function HomePage({
 }) {
   const locale = params.locale as Locale;
   const dict = await getDictionary(locale);
-  const latestNews = news.slice(0, 3);
+  const latestNews = getLatestNews(3);
 
   return (
     <>
