@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { NewsItem } from "@/lib/news";
+import { getMediaUrl } from "@/lib/config";
 import type { Locale } from "@/i18n/locales";
 
 export default function NewsCard({
@@ -21,9 +22,7 @@ export default function NewsCard({
     year: "numeric",
   });
 
-  const imageUrl = item.image
-    ? `/uploads/${item.image}`
-    : null;
+  const imageUrl = item.image ? getMediaUrl(item.image) : null;
 
   return (
     <article className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all border border-gray-100 overflow-hidden">

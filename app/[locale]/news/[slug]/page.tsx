@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Section from "@/components/Section";
 import { getAllNews, getNewsBySlug } from "@/lib/news";
+import { getMediaUrl } from "@/lib/config";
 import { ArrowLeft } from "lucide-react";
 import { getDictionary } from "@/i18n/getDictionary";
 import { locales, type Locale } from "@/i18n/locales";
@@ -43,7 +44,7 @@ export default async function NewsArticle({ params }: Props) {
     year: "numeric",
   });
 
-  const imageUrl = item.image ? `/uploads/${item.image}` : null;
+  const imageUrl = item.image ? getMediaUrl(item.image) : null;
 
   return (
     <div className="pt-20">
