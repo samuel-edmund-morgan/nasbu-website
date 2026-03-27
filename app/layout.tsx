@@ -15,6 +15,13 @@ export const metadata: Metadata = {
   },
   description:
     "Офіційний вебсайт Національної академії Служби безпеки України — провідного навчального закладу у сфері національної безпеки та оборони.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
