@@ -10,12 +10,12 @@ interface Milestone {
 }
 
 const images = [
-  "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&h=400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop&q=80",
-  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop&q=80",
+  "/images/history-1992.jpg",
+  "/images/history-1999.jpg",
+  "/images/history-2004.jpg",
+  "/images/history-2014.jpg",
+  "/images/history-2021.jpg",
+  "/images/history-2022.jpg",
 ];
 
 export default function HistoryBookshelf({

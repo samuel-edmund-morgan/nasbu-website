@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Section, { SectionTitle } from "@/components/Section";
 import NewsCard from "@/components/NewsCard";
+import YearsSince from "@/components/YearsSince";
 import { getLatestNews } from "@/lib/news";
 import Link from "next/link";
 import {
@@ -78,7 +79,7 @@ export default async function HomePage({
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
               <img
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=600&fit=crop&q=80"
+                src="/images/about-building.jpg"
                 alt=""
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -86,7 +87,7 @@ export default async function HomePage({
               <div className="absolute inset-0 bg-gradient-to-t from-primary-950/80 via-primary-900/30 to-transparent" />
               <div className="absolute bottom-6 left-6 text-center">
                 <div className="text-5xl md:text-6xl font-bold text-accent-400 mb-1 drop-shadow-lg">
-                  1992
+                  <YearsSince />
                 </div>
                 <div className="text-primary-100 text-sm font-medium">{dict.home.yearsExperience}</div>
               </div>

@@ -32,7 +32,7 @@ export default async function ContactsPage({
       <div className="relative text-white py-16 md:py-24">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=600&fit=crop&q=80"
+            src="/images/hero-contacts.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -133,7 +133,7 @@ export default async function ContactsPage({
       <Section className="!pt-0">
         <div className="aspect-[16/9] md:aspect-[16/6] rounded-xl overflow-hidden relative">
           <img
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=500&fit=crop&q=80"
+            src="/images/contacts-section.jpg"
             alt=""
             className="w-full h-full object-cover"
             loading="lazy"

@@ -39,7 +39,7 @@ export default async function AboutPage({
       <div className="relative text-white py-16 md:py-24">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1562774053-701939374585?w=1600&h=600&fit=crop&q=80"
+            src="/images/hero-about.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -73,7 +73,7 @@ export default async function AboutPage({
           <div className="space-y-4">
             <div className="rounded-xl overflow-hidden mb-4">
               <img
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=700&h=360&fit=crop&q=80"
+                src="/images/about-mission.jpg"
                 alt=""
                 className="w-full h-44 object-cover"
                 loading="lazy"

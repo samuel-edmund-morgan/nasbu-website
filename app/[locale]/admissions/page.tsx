@@ -34,7 +34,7 @@ export default async function AdmissionsPage({
       <div className="relative text-white py-16 md:py-24">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1600&h=600&fit=crop&q=80"
+            src="/images/hero-admissions.jpg"
             alt=""
             className="w-full h-full object-cover"
           />

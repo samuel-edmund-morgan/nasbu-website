@@ -39,7 +39,7 @@ export default async function EducationPage({
       <div className="relative text-white py-16 md:py-24">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1600&h=600&fit=crop&q=80"
+            src="/images/hero-education.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
