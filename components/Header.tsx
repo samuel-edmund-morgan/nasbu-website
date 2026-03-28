@@ -24,6 +24,10 @@ export default function Header({
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
+  // Only the home page has a full-screen hero where transparent header works
+  const isHomePage =
+    pathname === `/${locale}` || pathname === `/${locale}/`;
+
   const navItems: NavItem[] = [
     { title: dict.nav.home, href: `/${locale}` },
     { title: dict.nav.about, href: `/${locale}/about` },
@@ -52,10 +56,12 @@ export default function Header({
     };
   }, []);
 
+  const showSolidBg = !isHomePage || isScrolled;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        showSolidBg
           ? "bg-primary-900/95 backdrop-blur-md border-b border-primary-700/50 shadow-lg"
           : "bg-transparent border-b border-transparent"
       }`}

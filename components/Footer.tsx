@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import type { Dictionary } from "@/i18n/getDictionary";
