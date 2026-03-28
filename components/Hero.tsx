@@ -65,7 +65,7 @@ export default function Hero({
       </div>
 
       {/* CTA button — fixed position from bottom */}
-      <div className="absolute inset-x-0 bottom-[18%] md:bottom-[20%] z-10 text-center">
+      <div className="absolute inset-x-0 bottom-[10%] md:bottom-[12%] z-10 text-center">
         <div key={`cta-${currentSlide}`} className="animate-fadeIn">
           <Link
             href={`/${locale}${slide.ctaHref}`}
