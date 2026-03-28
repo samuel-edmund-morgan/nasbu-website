@@ -50,14 +50,23 @@ export default function Hero({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <div key={currentSlide} className="animate-fadeIn">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            {slide.title}
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-primary-200 mb-10 max-w-3xl mx-auto">
-            {slide.subtitle}
-          </p>
+      {/* Title & subtitle — upper third of screen */}
+      <div className="absolute inset-x-0 top-[25%] z-10 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <div key={`text-${currentSlide}`} className="animate-fadeIn">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              {slide.title}
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-primary-200 max-w-3xl mx-auto">
+              {slide.subtitle}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA button — fixed position from bottom */}
+      <div className="absolute inset-x-0 bottom-[18%] md:bottom-[20%] z-10 text-center">
+        <div key={`cta-${currentSlide}`} className="animate-fadeIn">
           <Link
             href={`/${locale}${slide.ctaHref}`}
             className="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-primary-950 font-semibold px-8 py-4 rounded-lg text-lg transition-all hover:scale-105 shadow-lg shadow-accent-500/25"
@@ -67,7 +76,7 @@ export default function Hero({
         </div>
 
         {/* Slide indicators */}
-        <div className="flex items-center justify-center gap-2 mt-12">
+        <div className="flex items-center justify-center gap-2 mt-6">
           {slides.map((_: unknown, i: number) => (
             <button
               key={i}
