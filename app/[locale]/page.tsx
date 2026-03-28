@@ -86,13 +86,13 @@ export default async function HomePage({
               <div className="absolute inset-0 bg-gradient-to-t from-primary-950/80 via-primary-900/30 to-transparent" />
               <div className="absolute bottom-6 left-6 text-center">
                 <div className="text-5xl md:text-6xl font-bold text-accent-400 mb-1 drop-shadow-lg">
-                  30+
+                  1992
                 </div>
                 <div className="text-primary-100 text-sm font-medium">{dict.home.yearsExperience}</div>
               </div>
             </div>
             <div className="absolute -bottom-4 right-0 sm:-right-4 bg-accent-500 text-primary-950 p-3 sm:p-4 rounded-xl shadow-lg">
-              <div className="text-xl sm:text-2xl font-bold">5000+</div>
+              <div className="text-xl sm:text-2xl font-bold">СБУ</div>
               <div className="text-xs sm:text-sm font-medium">{dict.home.graduates}</div>
             </div>
           </div>

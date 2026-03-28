@@ -11,26 +11,26 @@
   "site": {
     "name": "National Academy of the Security Service of Ukraine",
     "shortName": "National Academy of the SSU",
-    "description": "Official website of the National Academy of the Security Service of Ukraine — a leading educational institution in the field of national security and defence.",
+    "description": "Official website of the National Academy of the Security Service of Ukraine — the only higher military educational institution in Ukraine specializing in counterintelligence.",
     "headerLine1": "National Academy of the",
     "headerLine2": "Security Service of Ukraine",
-    "address": "22 Mykhaila Maksymovycha St, Kyiv, Ukraine",
-    "phone": "+38 (044) 257-33-83",
-    "email": "info@nasbu.edu.ua",
+    "address": "22 Mykhaila Maksymovycha St, Kyiv 03066, Ukraine",
+    "phone": "+38 (063) 229-58-45",
+    "email": "academy@ssu.gov.ua",
     "workingHours": "Mon-Fri: 09:00 - 18:00"
   },
   "hero": {
     "slides": [
       {
         "title": "National Academy of the Security Service of Ukraine",
-        "subtitle": "Training the elite of national security",
-        "ctaText": "Admissions 2026",
+        "subtitle": "The only higher military educational institution in Ukraine specializing in counterintelligence",
+        "ctaText": "Admissions",
         "ctaHref": "/admissions"
       },
       {
         "title": "Education. Research. Security.",
-        "subtitle": "Modern curricula, advanced technologies, best-in-class faculty",
-        "ctaText": "Learn More",
+        "subtitle": "Training counterintelligence officers, translators, and information security experts",
+        "ctaText": "About the Academy",
         "ctaHref": "/about"
       },
       {
@@ -48,291 +48,270 @@
     "features": [
       {
         "title": "State Security",
-        "text": "Training highly qualified specialists in the field of national security and defence"
+        "text": "Training counterintelligence officers, cyber security and information protection specialists for the Security Service of Ukraine"
       },
       {
-        "title": "Modern Education",
-        "text": "Curricula meeting the highest international standards"
+        "title": "Unique Education",
+        "text": "Over 40 disciplines: specialized, legal, military-tactical, foreign languages, strategic communications"
       },
       {
         "title": "Research Activities",
-        "text": "Fundamental and applied research in the field of security"
+        "text": "Research in countering threats to state security, cyber security, and information protection"
       },
       {
         "title": "International Cooperation",
-        "text": "Partnerships with leading educational institutions worldwide"
+        "text": "Partnership with EU and NATO intelligence services, implementation of international experience"
       }
     ],
     "aboutTitle": "About the Academy",
-    "aboutText1": "The National Academy of the Security Service of Ukraine is the principal institution of higher education within the SSU system. The Academy provides training, retraining, and advanced professional development for personnel of the Security Service of Ukraine.",
-    "aboutText2": "Established as a leading centre for security education, the Academy delivers thorough theoretical training and practical skills essential for effective operations in the field of state interest protection.",
+    "aboutText1": "The National Academy of the Security Service of Ukraine is the only higher military educational institution in Ukraine specializing in counterintelligence. It trains counterintelligence officers, philologists-translators, and information security experts for the Security Service of Ukraine.",
+    "aboutText2": "The Academy was established on January 27, 1992, by a resolution of the Cabinet of Ministers of Ukraine. On August 2, 1999, by Decree of the President of Ukraine, the Academy was granted the status of National.",
     "learnMore": "Learn More",
-    "yearsExperience": "years of experience",
+    "yearsExperience": "years since establishment",
     "graduates": "graduates",
     "newsTitle": "Latest News",
     "newsSubtitle": "Current events and activities of the Academy",
     "allNews": "All News",
-    "ctaTitle": "Ready to join the elite?",
-    "ctaText": "Begin your path towards a professional career in national security",
+    "ctaTitle": "Ready to join the team?",
+    "ctaText": "Begin your path towards a professional career in the Security Service of Ukraine",
     "ctaButton": "Admission Requirements"
   },
   "about": {
     "title": "About the Academy",
-    "subtitle": "The National Academy of the SSU is a leading educational institution within the Security Service of Ukraine",
-    "missionTitle": "Our Mission",
-    "missionText1": "The National Academy of the Security Service of Ukraine is the principal higher military educational institution within the SSU system, providing training, retraining, and advanced professional development for personnel of the Security Service of Ukraine.",
-    "missionText2": "The Academy provides higher education at the first (bachelor's) and second (master's) levels, as well as the academic degrees of Doctor of Philosophy and Doctor of Sciences.",
-    "missionText3": "The Academy's activities are focused on developing highly qualified specialists capable of effectively protecting national interests in the face of modern threats and challenges.",
+    "subtitle": "The only higher military educational institution in Ukraine specializing in counterintelligence",
+    "missionTitle": "Mission, Vision and Values",
+    "missionText1": "The Academy's mission is to create the conditions necessary for obtaining higher and postgraduate education, as well as for conducting research in the interests of strengthening Ukraine's national security and ensuring the effective fulfillment of state security tasks.",
+    "missionText2": "The Academy plays an active role in shaping the development and public image of the Security Service of Ukraine. It is a leader among higher education institutions in the security and defense sector and lays the foundation for attaining the status of a research university in the future.",
+    "missionText3": "Academy values: quality, professionalism, commitment, innovation, creativity, integrity, responsibility of all participants in the educational process.",
     "missionCards": [
       {
         "title": "Mission",
-        "text": "Training top-level professionals for the national security system"
+        "text": "Creating conditions for higher and postgraduate education in the interests of strengthening national security"
       },
       {
         "title": "Education",
-        "text": "Bachelor's, master's, and doctoral programmes"
+        "text": "Bachelor's, master's programmes, and Doctor of Philosophy training"
       },
       {
-        "title": "Faculty",
-        "text": "Over 200 highly qualified academic and teaching staff"
+        "title": "Vision",
+        "text": "A leader among higher education institutions of the security and defense sector"
       }
     ],
     "stats": [
-      { "value": "30+", "label": "years of experience" },
-      { "value": "5000+", "label": "graduates" },
-      { "value": "200+", "label": "faculty members" },
-      { "value": "15+", "label": "specialisations" }
+      { "value": "1992", "label": "year of establishment" },
+      { "value": "1999", "label": "granted National status" },
+      { "value": "3", "label": "educational & research institutes" },
+      { "value": "40+", "label": "academic disciplines" }
     ],
     "historyTitle": "Our History",
     "historySubtitle": "Key milestones in the Academy's development",
     "milestones": [
       {
-        "year": "1994",
-        "text": "Establishment of the SSU Personnel Training Institute",
-        "detail": "A specialised educational institution was created for training highly qualified personnel of the Security Service of independent Ukraine. This marked the beginning of an in-house school of security education."
+        "year": "1992",
+        "text": "Establishment of the Academy",
+        "detail": "On January 27, 1992, the Academy was established by a resolution of the Cabinet of Ministers of Ukraine to train personnel for the Security Service of independent Ukraine."
       },
       {
-        "year": "2001",
-        "text": "Reorganisation into the National Academy of the SSU",
-        "detail": "The Institute was granted the status of a National Academy, recognising the highest level of training specialists in the field of national security. The range of specialisations was expanded."
+        "year": "1999",
+        "text": "National Academy Status",
+        "detail": "On August 2, 1999, by Decree of the President of Ukraine, the SSU Academy was granted the status of National — recognizing the highest level of training in the field of state security."
       },
       {
-        "year": "2010",
-        "text": "Level IV Accreditation",
-        "detail": "The Academy confirmed the highest level of accreditation, granting the right to train master's students, Doctors of Philosophy, and Doctors of Sciences. New educational standards were introduced."
+        "year": "2004",
+        "text": "Institute of Information Security",
+        "detail": "The Educational and Research Institute of Information Security was established, and students' training in cyber security and information protection was started."
       },
       {
-        "year": "2015",
-        "text": "New Cyber Security Specialisations",
-        "detail": "In response to modern challenges, training programmes in cyber security and information protection were introduced. Specialised laboratories and a cyber range were established."
+        "year": "2014",
+        "text": "NATO Standards Training",
+        "detail": "Medical and tactical training for staff and cadets was implemented according to NATO standards. Strategic communications courses were launched."
+      },
+      {
+        "year": "2021",
+        "text": "Structural Reform",
+        "detail": "The Institute was reorganized into the Educational and Research Institute of Information Security and Strategic Communications. Cybersecurity and Strategic Communications Centers were established."
       },
       {
         "year": "2022",
-        "text": "Modernisation to NATO Standards",
-        "detail": "A complete modernisation of curricula in accordance with NATO standards. Integration of best practices for training security sector personnel."
-      },
-      {
-        "year": "2025",
-        "text": "Cyber Defence Research Centre",
-        "detail": "Opening of a modern research centre equipped with advanced technologies for research in cyber defence and artificial intelligence."
+        "text": "Academy during Full-Scale War",
+        "detail": "Over 20 meetings held with prominent foreign experts in military, educational, and diplomatic fields. Strengthened international cooperation with EU and NATO intelligence services."
       }
     ],
     "structureTitle": "Structure",
-    "structureSubtitle": "Main structural divisions of the Academy",
+    "structureSubtitle": "Educational and Research Institutes of the Academy",
     "departments": [
-      "Personnel Training Institute",
-      "Institute of Retraining and Advanced Studies",
-      "Institute of Information Security",
-      "Research Centre",
-      "Department of Cyber Security",
-      "Department of Law and Law Enforcement",
-      "Department of Operative and Investigative Activities",
-      "Department of Foreign Languages",
-      "Department of Physical Training"
+      "Educational and Research Institute of Humanities — training cadets in K1 'State Security', K3 'National Security', B11 'Philology'",
+      "Educational and Research Institute of State Security — training, retraining, and professional development of security and defense sector specialists",
+      "Educational and Research Institute of Information Security and Strategic Communications — training students in cyber security, information protection, and law"
     ]
   },
   "admissions": {
     "title": "Admissions",
-    "subtitle": "Information for prospective students — admission requirements, specialisations, and stages of the 2026 admission campaign",
-    "stepsTitle": "Admission Stages",
-    "stepsSubtitle": "How to become a cadet of the National Academy of the SSU",
+    "subtitle": "Information for prospective students — how to become a cadet or student of the SSU National Academy",
+    "stepsTitle": "How to Become a Cadet",
+    "stepsSubtitle": "Peculiarities of cadet training at the SSU Academy",
     "steps": [
       {
-        "title": "Document Submission",
-        "text": "Submit your application and the required document package to the admissions office"
+        "title": "Free Education",
+        "text": "State-funded education with opportunity to receive a scholarship and full material support: dormitory, three meals a day, uniform, medical care"
       },
       {
-        "title": "Background Check",
-        "text": "Complete the special background check and medical examination"
+        "title": "Unique Training",
+        "text": "Legal and special disciplines, foreign languages, military and specialized physical training"
       },
       {
-        "title": "Entrance Examinations",
-        "text": "Pass the entrance exams and physical fitness assessment"
+        "title": "Military Routine",
+        "text": "6-day academic week, mandatory morning physical exercise, formations, self-study, duty shifts"
       },
       {
-        "title": "Enrolment",
-        "text": "Enrolment to the Academy based on competitive selection results"
+        "title": "100% Employment",
+        "text": "After graduation, all cadets continue military service in SSU bodies and units with the rank of Lieutenant"
       }
     ],
-    "requirementsTitle": "Admission Requirements",
-    "requirementsSubtitle": "Key requirements for admission candidates",
+    "requirementsTitle": "Ideal Candidate",
+    "requirementsSubtitle": "Who the Academy is looking for among applicants",
     "requirements": [
+      "Motivated patriots — for whom 'patriotism' is a sincere desire to serve the state and society",
+      "Strong individuals — ready for military training, subordination, and discipline",
+      "Eager to learn — willingness and readiness to learn is the key to success and professionalism",
+      "Responsible and persistent — not afraid of challenges, able to prioritize and follow through",
+      "Physically fit — sports and physical training receive special attention throughout all years of study",
       "Ukrainian citizenship",
-      "Age 17 to 25 (for bachelor's programme)",
-      "Complete secondary education",
-      "Fitness for military service based on health condition",
-      "No criminal record",
-      "Successful completion of a special background check",
-      "ZNO/NMT certificates in required subjects"
+      "Complete secondary education"
     ],
     "specialtiesTitle": "Specialisations",
-    "specialtiesSubtitle": "Specialisations offered at the Academy",
+    "specialtiesSubtitle": "Subject areas for cadets (state-funded)",
     "specialties": [
-      { "code": "081", "name": "Law", "degree": "Bachelor / Master", "duration": "4 / 1.5 years" },
-      { "code": "125", "name": "Cyber Security", "degree": "Bachelor / Master", "duration": "4 / 1.5 years" },
-      { "code": "256", "name": "National Security", "degree": "Master", "duration": "1.5 years" },
-      { "code": "262", "name": "Law Enforcement", "degree": "Bachelor / Master", "duration": "4 / 1.5 years" },
-      { "code": "253", "name": "Military Administration", "degree": "Master", "duration": "1.5 years" },
-      { "code": "113", "name": "Applied Mathematics", "degree": "Bachelor", "duration": "4 years" }
+      { "code": "K1", "name": "State Security — Counterintelligence activities in the field of state security", "degree": "Bachelor", "duration": "4 years, full-time" },
+      { "code": "K3", "name": "National Security — Counterintelligence protection of state cyber security and critical infrastructure", "degree": "Bachelor", "duration": "4 years, full-time" },
+      { "code": "B11", "name": "Philology — Translation in the field of state security", "degree": "Bachelor", "duration": "4 years, full-time" }
     ],
     "degreeLabel": "Degree:",
     "durationLabel": "Duration:",
-    "datesTitle": "Important Dates",
-    "datesSubtitle": "Key dates of the 2026 admission campaign",
+    "datesTitle": "Specialisations for Students",
+    "datesSubtitle": "Institute of Information Security and Strategic Communications (funded by individuals and legal entities)",
     "dates": [
-      { "date": "1 March", "event": "Start of document acceptance" },
-      { "date": "1 June", "event": "Deadline for document submission" },
-      { "date": "15-30 June", "event": "Entrance examinations" },
-      { "date": "15 July", "event": "Announcement of results" }
+      { "date": "K3", "event": "National Security — Cyber Protection of Information Resources; Organization of Restricted Information Protection (bachelor's/master's)" },
+      { "date": "D8", "event": "Law — Information Security Law; Information Law (bachelor's/master's)" }
     ],
-    "ctaTitle": "Have Questions?",
-    "ctaText": "Contact the admissions office for detailed information",
-    "ctaButton": "Admissions Office Contacts"
+    "ctaTitle": "Questions about Admissions?",
+    "ctaText": "Contact the Admissions Office: +38 (063) 229-58-45, academy@ssu.gov.ua",
+    "ctaButton": "Contacts"
   },
   "education": {
     "title": "Education",
-    "subtitle": "Educational programmes that develop top-level professionals in the field of national security",
-    "programsTitle": "Educational Programmes",
-    "programsSubtitle": "Levels of higher education at the Academy",
-    "durationLabel": "Duration:",
-    "specialtiesLabel": "Specialisations:",
+    "subtitle": "Three educational and research institutes train specialists for the Security Service of Ukraine",
+    "programsTitle": "Educational and Research Institutes",
+    "programsSubtitle": "Structural units conducting educational activities",
+    "durationLabel": "Specialisations:",
+    "specialtiesLabel": "Areas:",
     "programs": [
       {
-        "level": "Bachelor",
-        "duration": "4 years",
-        "description": "First level of higher education. Fundamental theoretical and practical training.",
-        "specialties": ["Law", "Cyber Security", "Law Enforcement", "Applied Mathematics"]
+        "level": "Institute of Humanities",
+        "duration": "Cadet Training",
+        "description": "Training cadets in K1 'State Security', K3 'National Security', B11 'Philology'. Over 40 disciplines: specialized, legal, military-tactical, physical training, foreign languages, strategic communications.",
+        "specialties": ["Counterintelligence", "Philology (translation)", "National Security"]
       },
       {
-        "level": "Master",
-        "duration": "1.5 years",
-        "description": "Second level of higher education. Advanced specialisation and research activities.",
-        "specialties": ["Law", "Cyber Security", "National Security", "Law Enforcement", "Military Administration"]
+        "level": "Institute of State Security",
+        "duration": "Training, retraining, professional development",
+        "description": "Training at bachelor's, master's, and Doctor of Philosophy levels. Retraining of SSU personnel and advanced training of operational staff in the main functional areas of SSU activity.",
+        "specialties": ["State Security", "SSU Retraining", "Professional Development"]
       },
       {
-        "level": "Doctor of Philosophy (PhD)",
-        "duration": "4 years",
-        "description": "Third level of higher education. Research activities and dissertation defence.",
-        "specialties": ["National Security", "Law", "Information Security"]
+        "level": "Institute of Information Security and Strategic Communications",
+        "duration": "Student Training",
+        "description": "Training specialists in cyber security, information protection, and law. Cybersecurity and Strategic Communications Centers established. CISCO Networking Academy operational. Research laboratories for countering cyber threats.",
+        "specialties": ["Cyber Protection", "Information Protection", "Information Security Law"]
       }
     ],
-    "featuresTitle": "Advantages of Studying",
+    "featuresTitle": "Training Features",
     "featuresSubtitle": "What ensures the quality of education at the Academy",
     "features": [
       {
-        "title": "Modern Equipment",
-        "text": "Computer laboratories, simulators, training grounds, and specialised classrooms"
+        "title": "Specialized Classrooms",
+        "text": "Computer labs, forensic science and counterintelligence rooms, linguistic laboratories"
+      },
+      {
+        "title": "Combat Training",
+        "text": "Electronic firing simulator, off-site training facility"
       },
       {
         "title": "Language Training",
-        "text": "Intensive study of English and other foreign languages"
+        "text": "Departments of Romance-Germanic, Eastern, and East European languages"
       },
       {
-        "title": "Practical Focus",
-        "text": "Internships, practical training, and participation in real operations"
+        "title": "CISCO Networking Academy",
+        "text": "Practical experience in network equipment configuration, internationally recognized certificates"
       },
       {
-        "title": "Flexible Schedule",
-        "text": "Full-time and part-time study options for various categories of cadets"
+        "title": "SSU Internships",
+        "text": "Operational exercises and internships at the Central Directorate and regional SSU bodies"
       },
       {
-        "title": "Recognised Diplomas",
-        "text": "State-standard diplomas recognised in Ukraine and internationally"
-      },
-      {
-        "title": "Library & Resources",
-        "text": "Modern library with access to international academic databases"
+        "title": "International Experience",
+        "text": "NATO standards training, workshops with EU Advisory Mission, NATO Representation, and OSCE specialists"
       }
     ],
-    "scheduleTitle": "Academic Process",
-    "scheduleText": "Training is organised in accordance with higher military education standards. Cadets combine theoretical studies with practical exercises, physical training, and drill instruction.",
+    "scheduleTitle": "International Cooperation",
+    "scheduleText": "The SSU Academy actively participates in projects with international partners. Instructors and researchers undergo training at partner intelligence services and foreign universities. Key areas: counterintelligence, counterterrorism, applied linguistics, leadership, media and public communication.",
     "scheduleStats": [
-      { "value": "6", "label": "hours of lectures per day" },
-      { "value": "2", "label": "hours of physical training" },
-      { "value": "12", "label": "weeks of field practice per year" }
+      { "value": "40+", "label": "academic disciplines" },
+      { "value": "3", "label": "educational & research institutes" },
+      { "value": "2004", "label": "year Information Security Institute established" }
     ]
   },
   "science": {
     "title": "Research",
-    "subtitle": "The Academy's research activities — fundamental and applied studies in the field of security",
+    "subtitle": "The Academy's research supports the effective fulfillment of SSU tasks in safeguarding state security",
     "stats": [
-      { "value": "50+", "label": "Doctors of Sciences" },
-      { "value": "120+", "label": "Candidates of Sciences" },
-      { "value": "300+", "label": "publications annually" },
-      { "value": "25+", "label": "research projects" }
+      { "value": "ROC", "label": "Research and Organizational Center" },
+      { "value": "SAC", "label": "Specialized Academic Council" },
+      { "value": "13+", "label": "research directions" },
+      { "value": "20+", "label": "partner institutions" }
     ],
     "directionsTitle": "Research Directions",
-    "directionsSubtitle": "Key areas of research at the Academy",
+    "directionsSubtitle": "Key areas of scientific research at the Academy",
     "directions": [
       {
-        "title": "Cyber Security and Information Protection",
-        "text": "Development of methods to counter cyber threats, critical infrastructure protection, and cryptography"
+        "title": "SSU Activities During Special Periods",
+        "text": "Countering intelligence-sabotage and diversionary activities of the russian federation's intelligence services and its satellites against Ukraine"
       },
       {
-        "title": "Legal Framework for Security",
-        "text": "Research on legal aspects of national security and improvement of legislation"
+        "title": "Protection of State Sovereignty",
+        "text": "Protection of constitutional order, territorial integrity, defense and scientific-technical potential, cyber and information security, critical infrastructure"
       },
       {
-        "title": "Operative and Investigative Activities",
-        "text": "Methodology and tactics of operative work, analysis of modern threats"
+        "title": "Counterterrorism Security",
+        "text": "Improving counterterrorism security in Ukraine under the legal regime of martial law"
       },
       {
-        "title": "Psychology of Security Operations",
-        "text": "Psychological training, professional selection, and stress resilience of operative personnel"
+        "title": "Documentation of Russian War Crimes",
+        "text": "Documentation and investigation of crimes against the foundations of national security and russian war crimes"
       },
       {
-        "title": "Analytics and Forecasting",
-        "text": "Methods of information analysis, threat forecasting, and decision support systems"
+        "title": "Countering Hostile Propaganda",
+        "text": "Countering hostile propaganda, OSINT in the interests of state security, ensuring security in de-occupied territories"
       },
       {
-        "title": "Military Administration",
-        "text": "Strategic planning, command of forces and assets under hybrid threat conditions"
+        "title": "SSU Reform to NATO Standards",
+        "text": "Operational and combat training system according to NATO standards, sanctions policy, strengthening SSU capabilities"
       }
     ],
-    "publicationsTitle": "Publications",
-    "publicationsSubtitle": "Academic publications of the Academy",
+    "publicationsTitle": "Academic Publications",
+    "publicationsSubtitle": "Professional publications of the Academy",
     "publications": [
       {
-        "title": "NASSU Academic Papers Collection",
-        "description": "Professional publication listed by the Ministry of Education and Science of Ukraine",
-        "frequency": "Published 4 times per year"
-      },
-      {
-        "title": "Bulletin of the National Academy of the SSU",
-        "description": "Academic and practical journal on security matters",
-        "frequency": "Published 2 times per year"
-      },
-      {
-        "title": "Cyber Security Review",
-        "description": "English-language publication on cyber security",
-        "frequency": "Published 2 times per year"
+        "title": "Herald of Criminal Justice",
+        "description": "Scientific and practical journal, Category 'B' professional publication in specialty 081 'Law'",
+        "frequency": "Co-founded by Taras Shevchenko National University of Kyiv, NAIA, SSU National Academy"
       }
     ],
-    "councilsTitle": "Specialised Academic Councils",
-    "councilsText": "The Academy hosts specialised academic councils for the defence of dissertations for the academic degrees of Doctor and Candidate of Sciences in specialisations within national security, law, and information security.",
+    "councilsTitle": "Specialized Academic Council",
+    "councilsText": "The SSU Academy hosts Specialized Academic Council SRD 26.706.02 for the defense of doctoral and candidate dissertations with restricted access classifications in the following specialties: 21.07.01 — ensuring state security of Ukraine (K1 State Security); 12.00.09 — criminal procedure and criminalistics, forensic examination, operative-investigative activities (D8 Law).",
     "councilsStats": [
-      { "value": "3", "label": "specialised academic councils" },
-      { "value": "150+", "label": "dissertations defended" }
+      { "value": "21.07.01", "label": "ensuring state security" },
+      { "value": "12.00.09", "label": "criminal procedure and criminalistics" }
     ]
   },
   "contacts": {
@@ -342,23 +321,23 @@
     "items": [
       {
         "title": "Address",
-        "text": "22 Mykhaila Maksymovycha St, Kyiv, Ukraine",
-        "detail": "Directions: Holosiivska metro station, then 10 min walk"
+        "text": "22 Mykhaila Maksymovycha St, Kyiv 03066, Ukraine",
+        "detail": "Selection Committee (students): 2/32 Aviakonstructora Antonova St, Bldg 92, Kyiv 03186"
       },
       {
         "title": "Phone",
-        "text": "+38 (044) 257-33-83",
-        "detail": "Admissions office: +38 (044) 257-33-84"
+        "text": "+38 (063) 229-58-45",
+        "detail": "Rector's Office: +38 (044) 527-76-08"
       },
       {
         "title": "Email",
-        "text": "info@nasbu.edu.ua",
-        "detail": "Admissions office: vstup@nasbu.edu.ua"
+        "text": "academy@ssu.gov.ua",
+        "detail": "Applicants website: vstup.nasbu.edu.ua"
       },
       {
-        "title": "Working Hours",
-        "text": "Mon-Fri: 09:00 - 18:00",
-        "detail": "Saturday: 10:00 - 14:00 (admissions office)"
+        "title": "Social Media",
+        "text": "Instagram: @academy.ssu",
+        "detail": "Facebook: NationalAcademySSU"
       }
     ],
     "formTitle": "Write to Us",
