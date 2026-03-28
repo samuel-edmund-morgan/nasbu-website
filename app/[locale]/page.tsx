@@ -93,7 +93,7 @@ export default async function HomePage({
               </div>
             </div>
             <div className="absolute -bottom-4 right-0 sm:-right-4 bg-accent-500 text-primary-950 p-3 sm:p-4 rounded-xl shadow-lg">
-              <div className="text-xl sm:text-2xl font-bold">СБУ</div>
+              <div className="text-xl sm:text-2xl font-bold">~45 тис.</div>
               <div className="text-xs sm:text-sm font-medium">{dict.home.graduates}</div>
             </div>
           </div>
